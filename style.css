@@ -1,0 +1,337 @@
+
+/* STYLE GENERAL */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #faf7f2;
+    color: #665043;
+}
+
+/* EN-TETE */
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #eee3d7;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+/* MENU */
+nav {
+    text-align: center;
+    padding: 20px;
+    background-color: #d8c2ad;
+}
+
+nav a {
+    color: #59402f;
+    text-decoration: none;
+    margin: 12px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* PHOTO DE COUVERTURE */
+.couverture {
+    background-image: linear-gradient(
+        rgba(50, 35, 25, 0.25),
+        rgba(50, 35, 25, 0.25)
+    ), url("images/beaute.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+/* TITRE ET TEXTE SUR LA PHOTO */
+.couverture h2 {
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.couverture p {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* PRESENTATION */
+.presentation {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.presentation h2 {
+    font-size: 30px;
+}
+
+/* ARTICLES */
+.articles {
+    padding: 30px;
+    text-align: center;
+}
+
+.article {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.article a {
+    color: #a47d64;
+    font-weight: bold;
+}
+
+/* VERSION TELEPHONE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .couverture {
+        height: 280px;
+        margin: 20px 15px;
+    }
+
+    .couverture h2 {
+        font-size: 26px;
+    }
+
+    .couverture p {
+        font-size: 17px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+
+/* =================================
+   GUIDE VISAGE - ARTICLE 1
+================================= */
+
+.guide {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #665043;
+}
+
+/* INTRODUCTION */
+
+.guide-intro {
+    text-align: center;
+    padding: 65px 30px;
+    background-color: #eee3d7;
+    border-radius: 15px;
+    margin-bottom: 55px;
+}
+
+.guide-intro .sous-titre {
+    letter-spacing: 4px;
+    font-size: 13px;
+    color: #a47d64;
+    font-weight: bold;
+}
+
+.guide-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    margin: 20px 0;
+    line-height: 1.3;
+}
+
+.guide-intro p {
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+/* RUBRIQUES */
+
+.guide-section {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(80, 55, 35, 0.06);
+}
+
+.guide-section h2 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #8b6751;
+    border-bottom: 1px solid #e8d9cb;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.guide-section h3 {
+    font-size: 21px;
+    color: #a47d64;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.guide-section p,
+.guide-section li {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.guide-section ul {
+    padding-left: 25px;
+}
+
+.guide-section li {
+    margin-bottom: 12px;
+}
+
+/* CONCLUSION */
+
+.guide-conclusion {
+    text-align: center;
+    padding: 55px 30px;
+    background-color: #eee3d7;
+    border-radius: 15px;
+    margin-top: 45px;
+}
+
+.guide-conclusion h2 {
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.guide-conclusion p {
+    max-width: 650px;
+    margin: 20px auto 0;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* RETOUR ACCUEIL */
+
+.retour {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.retour a {
+    color: #a47d64;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.retour a:hover {
+    text-decoration: underline;
+}
+
+/* VERSION MOBILE */
+
+@media (max-width: 600px) {
+
+    .guide {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    .guide-intro {
+        padding: 40px 18px;
+    }
+
+    .guide-intro h2 {
+        font-size: 29px;
+    }
+
+    .guide-section {
+        padding: 25px 20px;
+    }
+
+    .guide-section h2 {
+        font-size: 23px;
+    }
+
+    .guide-conclusion {
+        padding: 35px 20px;
+    }
+}
+
+/* =================================
+   RECETTES BEAUTE - ARTICLE 2
+================================= */
+
+.recettes {
+    background-color: #faf7f2;
+    box-shadow: none;
+    padding: 30px 10px;
+}
+
+.recette {
+    background-color: white;
+    padding: 30px;
+    margin: 35px auto;
+    border-radius: 15px;
+    max-width: 750px;
+    box-shadow: 0 4px 18px rgba(80, 55, 35, 0.07);
+}
+
+.recette img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.recette h3 {
+    color: #8b6751;
+    font-size: 25px;
+}
+
+.recette h4 {
+    color: #a47d64;
+    margin-top: 25px;
+}
+
+.recette p,
+.recette li {
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .recette {
+        padding: 20px;
+    }
+
+    .recette img {
+        height: 220px;
+    }
+}
